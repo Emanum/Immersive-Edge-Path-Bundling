@@ -1,3 +1,6 @@
 [submodule "three-forcegraph-edge-path-bundling"]
 	path = three-forcegraph-edge-path-bundling
 	url = https://github.com/Emanum/three-forcegraph-edge-path-bundling.git
+[submodule "aframe-forcegraph-component-edge-path-bundling"]
+	path = aframe-forcegraph-component-edge-path-bundling
+	url = https://github.com/Emanum/aframe-forcegraph-component-edge-path-bundling.git
