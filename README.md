@@ -26,4 +26,52 @@ By using our previous three.js module we were able to render our edge path bundl
 There are multiple modules from the original author, [Vasco Asturiano](https://github.com/vasturiano), that build up on each other.
 An overview of the modules can be found [here](https://vasturiano.github.io/react-force-graph/example/forcegraph-dependencies/).
 
-## How to run
+## How to run 
+
+
+### Install dependencies
+
+In the three-forcegraph-edge-path-bundling folder run:
+
+```
+npm install
+```
+
+In the aframe-forcegraph-component-edge-path-bundling folder run:
+
+```
+npm link three-forcegraph --force
+npm install
+yarn install
+```
+
+### Run three-forcegraph-edge-path-bundling
+
+In the `three-forcegraph-edge-path-bundling` folder run:
+
+```
+npm run dev
+```
+
+Then open `./examples/3d/basic/index.html` via a web server see [Open files in a webserver](#open-files-in-a-webserver)
+
+### Run aframe-forcegraph-component-edge-path-bundling
+
+In the `three-forcegraph-edge-path-bundling` folder run:
+
+```
+npm run build
+```
+
+In the `aframe-forcegraph-component-edge-path-bundling` folder run:
+
+```
+npm run dist
+```
+
+Then open `./examples/vr/basic/index.html` via a web server see [Open files in a webserver](#open-files-in-a-webserver)
+
+
+### Open files in a webserver
+For example with intellij you can right-click on the file and select `Open in Browser`. Or in VSCode you can install the `Live Server` extension and right-click on the file and select `Open with Live Server`.
+Another way is to run `python -m http.server` in the folder where the file is located and then open `localhost:8000` in your browser.
