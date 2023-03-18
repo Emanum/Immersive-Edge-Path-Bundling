@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Immersive-Edge-Path-Bundling.iml" filepath="$PROJECT_DIR$/Immersive-Edge-Path-Bundling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/aframe-forcegraph-component-edge-path-bundling.iml" filepath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/aframe-forcegraph-component-edge-path-bundling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/examples.iml" filepath="$PROJECT_DIR$/examples/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/three-forcegraph-edge-path-bundling.iml" filepath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/three-forcegraph-edge-path-bundling.iml" />
+    </modules>
+  </component>
+</project>
