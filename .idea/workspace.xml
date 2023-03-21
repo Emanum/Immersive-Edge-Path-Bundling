@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="update symlink">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/README.md" afterDir="false" />
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="add option linkBundling: none or edgepath, default=none" />
+    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="">
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/vr/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/vr/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +82,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="" />
+      <changelist id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
       <created>1678829959520</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -103,7 +96,7 @@
       <workItem from="1679160441826" duration="294000" />
       <workItem from="1679160821044" duration="9746000" />
       <workItem from="1679306243841" duration="10078000" />
-      <workItem from="1679433915116" duration="3835000" />
+      <workItem from="1679433915116" duration="4167000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -140,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679420383132</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add option linkBundling: none or edgepath, default=none">
+      <created>1679438134511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679438134511</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add option linkBundling: none or edgepath, default=none">
+      <created>1679438166186</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679438166187</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="update three-forcegraph-edge-path-bundling" />
     <MESSAGE value="create symlink and add readme to start via ngrok" />
     <MESSAGE value="update symlink" />
-    <option name="LAST_COMMIT_MESSAGE" value="update symlink" />
+    <MESSAGE value="add option linkBundling: none or edgepath, default=none" />
+    <option name="LAST_COMMIT_MESSAGE" value="add option linkBundling: none or edgepath, default=none" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
