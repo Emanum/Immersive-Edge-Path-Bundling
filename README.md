@@ -13,7 +13,10 @@ There are two main components in this project
 ### three-forcegraph-edge-path-bundling
 
 This is the base implementation of a three.js module that renders a force-directed graph. It is forked from [three-forcegraph](https://github.com/vasturiano/three-forcegraph). 
-In addition, we added the edge path bundling algorithm in 3D to the module. 
+In addition, we added the edge path bundling algorithm in 3D to the module.
+
+The main changes are in 
+`three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js`
 
 ### aframe-forcegraph-component-edge-path-bundling
 
@@ -35,6 +38,7 @@ In the three-forcegraph-edge-path-bundling folder run:
 
 ```
 npm install
+npm link
 ```
 
 In the aframe-forcegraph-component-edge-path-bundling folder run:
@@ -75,3 +79,12 @@ Then open `./examples/vr/basic/index.html` via a web server see [Open files in a
 ### Open files in a webserver
 For example with intellij you can right-click on the file and select `Open in Browser`. Or in VSCode you can install the `Live Server` extension and right-click on the file and select `Open with Live Server`.
 Another way is to run `python -m http.server` in the folder where the file is located and then open `localhost:8000` in your browser.
+
+### Host an HTTPS server for VR
+WebXR requires HTTPS. You can use [ngrok](https://ngrok.com/) to host a local server on the internet via https. 
+
+1. Start a local server on port 8000 (or any other port) with `python -m http.server 8000`
+2. Start ngrok with `ngrok http 8000`
+3. Copy the https url from ngrok and open it in your browser on Oculust Quest or other VR device
+
+
