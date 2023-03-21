@@ -32,7 +32,8 @@
     };
 
     const Graph = new ThreeForceGraph()
-      .graphData(gData);
+      .graphData(gData)
+      .linkBundling('edgepath');
 
     // Setup renderer
     const renderer = new THREE.WebGLRenderer();
