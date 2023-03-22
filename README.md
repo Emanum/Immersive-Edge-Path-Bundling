@@ -37,15 +37,14 @@ An overview of the modules can be found [here](https://vasturiano.github.io/reac
 In the three-forcegraph-edge-path-bundling folder run:
 
 ```
-npm install
-npm link
+yarn install
+yarn link
 ```
 
 In the aframe-forcegraph-component-edge-path-bundling folder run:
 
 ```
-npm link three-forcegraph --force
-npm install
+yarn link three-forcegraph
 yarn install
 ```
 
@@ -54,7 +53,7 @@ yarn install
 In the `three-forcegraph-edge-path-bundling` folder run:
 
 ```
-npm run dev
+yarn run dev
 ```
 
 Then open `./examples/3d/basic/index.html` via a web server see [Open files in a webserver](#open-files-in-a-webserver)
@@ -64,13 +63,13 @@ Then open `./examples/3d/basic/index.html` via a web server see [Open files in a
 In the `three-forcegraph-edge-path-bundling` folder run:
 
 ```
-npm run build
+yarn run build
 ```
 
 In the `aframe-forcegraph-component-edge-path-bundling` folder run:
 
 ```
-npm run dist
+yarn run dist
 ```
 
 Then open `./examples/vr/basic/index.html` via a web server see [Open files in a webserver](#open-files-in-a-webserver)

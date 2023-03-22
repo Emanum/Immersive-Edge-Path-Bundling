@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="add option linkBundling: none or edgepath, default=none" />
-    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="">
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="add option linkBundling: none or edgepath, default=none">
+      <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" afterDir="false" />
     </list>
+    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/example/basic/index.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/kapsule/dist/kapsule.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,30 +41,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "F:/dev/projects/dev-landingpage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "F:\\dev\\projects\\Immersive-Edge-Path-Bundling\\three-forcegraph-edge-path-bundling\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/dev/projects/dev-landingpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\dev\\projects\\Immersive-Edge-Path-Bundling\\three-forcegraph-edge-path-bundling\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\dev\projects\Immersive-Edge-Path-Bundling\examples\vr" />
@@ -97,6 +100,7 @@
       <workItem from="1679160821044" duration="9746000" />
       <workItem from="1679306243841" duration="10078000" />
       <workItem from="1679433915116" duration="4167000" />
+      <workItem from="1679526652949" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
