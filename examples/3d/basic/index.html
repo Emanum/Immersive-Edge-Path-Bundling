@@ -1,7 +1,7 @@
 <head>
   <style> body { margin: 0; } </style>
 
-  <script src="//unpkg.com/three"></script>
+  <script src="https://unpkg.com/three"></script>
 
 <!--  <script src="//unpkg.com/three-forcegraph"></script>-->
   <script src="../../../three-forcegraph-edge-path-bundling/dist/three-forcegraph.js"></script>
@@ -33,7 +33,8 @@
 
     const Graph = new ThreeForceGraph()
       .graphData(gData)
-      .linkBundling('edgepath');
+      .linkBundling('edgepath')
+      .cooldownTime(5000);
 
     // Setup renderer
     const renderer = new THREE.WebGLRenderer();
