@@ -17,22 +17,17 @@
   }</script>
   <script type="module">
     import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
+
+    //Load data
+    let smallDataset = '../../datasets/nodes774Links387.json';
+    let mediumDataset = '../../datasets/nodes1kLinks2k.json';
+    let largeDataset = '../../datasets/nodes1,5kLinks3,1k.json';
+    const N = 2000;
+
     Object.assign(THREE , { TrackballControls });
-
-    // Gen random data
-    const N = 300;
-    const gData = {
-      nodes: [...Array(N).keys()].map(i => ({ id: i })),
-      links: [...Array(N).keys()]
-        .filter(id => id)
-        .map(id => ({
-          source: id,
-          target: Math.round(Math.random() * (id-1))
-        }))
-    };
-
     const Graph = new ThreeForceGraph()
-      .graphData(gData)
+      // .graphData(data)
+      .jsonUrl(mediumDataset)
       .linkBundling('edgepath')
       .cooldownTime(5000);
 
