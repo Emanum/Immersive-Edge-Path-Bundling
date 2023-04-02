@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="implement base version of edge-path controlPoints">
-      <change afterPath="$PROJECT_DIR$/examples/datasets/DemoGraph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/examples/examples.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" afterDir="false" />
     </list>
     <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="">
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
@@ -33,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -47,6 +43,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2N1SBGAwZMQ5Oz7D7FcaoR57YiJ" />
   <component name="ProjectLevelVcsManager">
@@ -65,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/datasets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,7 +97,7 @@
       <recent name="$PROJECT_DIR$/examples/dataesets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="npm.Dev Three JS">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Immersive-Edge-Path-Bundling/examples/3d/basic/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -251,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679870225513</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="try to use promises for async calculation">
+      <created>1680453545923</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680453545923</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,21 +294,12 @@
     <MESSAGE value="implement base version of edge-path controlPoints" />
     <MESSAGE value="add more complex datasets" />
     <MESSAGE value="try to render new edges using CatmullRomCurve3" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to render new edges using CatmullRomCurve3" />
+    <MESSAGE value="try to use promises for async calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to use promises for async calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>189</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>155</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/three/build/three.module.js</url>
           <line>32263</line>
@@ -310,15 +307,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>168</line>
-          <properties lambdaOrdinal="-1" />
+          <line>152</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>177</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
