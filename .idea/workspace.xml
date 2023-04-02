@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="implement base version of edge-path controlPoints">
-      <change afterPath="$PROJECT_DIR$/examples/datasets/DemoGraph.json" afterDir="false" />
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="add DemoGraph.json">
+      <change afterPath="$PROJECT_DIR$/examples/webworker/edge-path-control-point-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-control-point-utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/examples/examples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/vr/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/vr/basic/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" afterDir="false" />
     </list>
@@ -33,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -65,7 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/datasets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,6 +120,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +161,7 @@
       <workItem from="1680077982958" duration="598000" />
       <workItem from="1680089986072" duration="7494000" />
       <workItem from="1680200316389" duration="6000" />
-      <workItem from="1680441434781" duration="4862000" />
+      <workItem from="1680441434781" duration="9298000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -251,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679870225513</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="workaround rendering CatmullRomCurve">
+      <created>1680447184305</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680447184305</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add DemoGraph.json">
+      <created>1680447276466</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680447276466</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,21 +305,13 @@
     <MESSAGE value="implement base version of edge-path controlPoints" />
     <MESSAGE value="add more complex datasets" />
     <MESSAGE value="try to render new edges using CatmullRomCurve3" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to render new edges using CatmullRomCurve3" />
+    <MESSAGE value="workaround rendering CatmullRomCurve" />
+    <MESSAGE value="add DemoGraph.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DemoGraph.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>189</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>155</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/three/build/three.module.js</url>
           <line>32263</line>
@@ -310,15 +319,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>168</line>
+          <line>94</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>177</line>
+          <line>77</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
