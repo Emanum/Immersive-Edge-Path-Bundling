@@ -19,15 +19,16 @@
     import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
 
     //Load data
+    let demoDataset = '../../datasets/DemoGraph.json';
     let smallDataset = '../../datasets/nodes774Links387.json';
     let mediumDataset = '../../datasets/nodes1kLinks2k.json';
     let largeDataset = '../../datasets/nodes1,5kLinks3,1k.json';
-    const N = 2000;
+    const N = 500;
 
     Object.assign(THREE , { TrackballControls });
     const Graph = new ThreeForceGraph()
       // .graphData(data)
-      .jsonUrl(mediumDataset)
+      .jsonUrl(demoDataset)
       .linkBundling('edgepath')
       .cooldownTime(5000);
 

@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/examples/datasets/nodes1,5kLinks3,1k.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/datasets/nodes1kLinks2k.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/datasets/nodes774Links387.json" afterDir="false" />
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="implement base version of edge-path controlPoints">
+      <change afterPath="$PROJECT_DIR$/examples/datasets/DemoGraph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/examples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/examples/examples.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" afterDir="false" />
     </list>
-    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
+    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="">
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
+    </list>
     <list id="e5487c29-3af0-415e-a9d8-f9f431ac4932" name="doNotCommit" comment="">
       <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" afterDir="false" />
@@ -29,12 +33,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/example/basic/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/@types/three/src/core/Raycaster.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/@types/three/src/extras/curves/QuadraticBezierCurve.d.ts" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/accessor-fn/dist/accessor-fn.d.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/three/build/three.module.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/three/src/extras/core/Interpolations.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -48,39 +56,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/dev/projects/dev-landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;io.unthrottled.doki.icons.jetbrains.settings.ThemeSettings&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.24698795&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/three-forcegraph-edge-path-bundling/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/datasets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "0d570cb2-96df-43cc-80da-7f777e6d0afe",
+    "settings.editor.splitter.proportion": "0.24698795",
+    "ts.external.directory.path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/three-forcegraph-edge-path-bundling/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;repository&quot;,
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository",
+      "directory"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/datasets" />
       <recent name="F:\dev\projects\Immersive-Edge-Path-Bundling\examples\vr" />
       <recent name="F:\dev\projects\Immersive-Edge-Path-Bundling\examples\3d" />
     </key>
@@ -143,7 +153,12 @@
       <workItem from="1679770204826" duration="7545000" />
       <workItem from="1679780782340" duration="388000" />
       <workItem from="1679781179936" duration="2904000" />
-      <workItem from="1679784243837" duration="4016000" />
+      <workItem from="1679784243837" duration="16946000" />
+      <workItem from="1680020658246" duration="2651000" />
+      <workItem from="1680077982958" duration="598000" />
+      <workItem from="1680089986072" duration="7494000" />
+      <workItem from="1680200316389" duration="6000" />
+      <workItem from="1680441434781" duration="4862000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -215,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679779848622</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add more complex datasets">
+      <created>1679846929152</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679846929152</updated>
+    </task>
+    <task id="LOCAL-00012" summary="try to render new edges using CatmullRomCurve3">
+      <created>1679870024280</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679870024280</updated>
+    </task>
+    <task id="LOCAL-00013" summary="try to render new edges using CatmullRomCurve3">
+      <created>1679870225513</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679870225513</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +275,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init idea project" />
     <MESSAGE value="update README.md" />
@@ -249,7 +286,42 @@
     <MESSAGE value="add option linkBundling: none or edgepath, default=none" />
     <MESSAGE value="change symlink to relative path, update README.md" />
     <MESSAGE value="implement base version of edge-path controlPoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement base version of edge-path controlPoints" />
+    <MESSAGE value="add more complex datasets" />
+    <MESSAGE value="try to render new edges using CatmullRomCurve3" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to render new edges using CatmullRomCurve3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
+          <line>189</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
+          <line>155</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/node_modules/three/build/three.module.js</url>
+          <line>32263</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
+          <line>168</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
+          <line>177</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
