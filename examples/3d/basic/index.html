@@ -1,7 +1,8 @@
 <head>
   <style> body { margin: 0; } </style>
 
-  <script src="https://unpkg.com/three"></script>
+<!--  <script src="https://unpkg.com/three"></script>-->
+  <script src="../../dependencyCache/http_unpkg.com_three.js"></script>
 
 <!--  <script src="//unpkg.com/three-forcegraph"></script>-->
   <script src="../../../three-forcegraph-edge-path-bundling/dist/three-forcegraph.js"></script>
@@ -10,16 +11,24 @@
 <body>
   <div id="3d-graph"></div>
 
+<!--  <script type="importmap">{-->
+<!--    "imports": {-->
+<!--      "three": "https://unpkg.com/three/build/three.module.js"-->
+<!--    }-->
+<!--  }</script>-->
   <script type="importmap">{
     "imports": {
-      "three": "https://unpkg.com/three/build/three.module.js"
+      "three": "../../dependencyCache/three.module.js"
     }
   }</script>
   <script type="module">
-    import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
+    import { TrackballControls } from '../../dependencyCache/TrackballControls.js';
+
+    // import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
 
     //Load data
-    let demoDataset = '../../datasets/DemoGraph.json';
+    let treeDemoGraph = '../../datasets/TreeDemoGraph.json';
+    let demoDataset = '../../datasets/demoGraph.json';
     let smallDataset = '../../datasets/nodes774Links387.json';
     let mediumDataset = '../../datasets/nodes1kLinks2k.json';
     let largeDataset = '../../datasets/nodes1,5kLinks3,1k.json';
@@ -28,7 +37,7 @@
     Object.assign(THREE , { TrackballControls });
     const Graph = new ThreeForceGraph()
       // .graphData(data)
-      .jsonUrl(largeDataset)
+      .jsonUrl(mediumDataset)
       .linkBundling('edgepath')
       .cooldownTime(5000);
 
