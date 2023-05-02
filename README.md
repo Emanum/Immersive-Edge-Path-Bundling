@@ -17,13 +17,18 @@ This is the base implementation of a three.js module that renders a force-direct
 In addition, we added the edge path bundling algorithm in 3D to the module.
 
 The main changes are in 
-`three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js`
+`three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js` -> main method that renders the graph
+`three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js` => edge path bundling algorithm
+`three-forcegraph-edge-path-bundling/src/utils/dijkstra.js` => dijkstra algorithm helper class 
+`three-forcegraph-edge-path-bundling/src/utils/tree-layout-utils.js` => tree layout helper class, used before the edge path bundling algorithm to layout the graph
 
 ### aframe-forcegraph-component-edge-path-bundling
 
 This is an A-Frame component that uses the three-forcegraph-edge-path-bundling module to render a force-directed graph in A-Frame. It is forked from [aframe-forcegraph-component](https://github.com/vasturiano/aframe-forcegraph-component)
 
 By using our previous three.js module we were able to render our edge path bundling algorithm in A-Frame.
+
+This uses the three-forcegraph-edge-path-bundling module as a dependency and adds the A-Frame component.
 
 ### Other modules
 
