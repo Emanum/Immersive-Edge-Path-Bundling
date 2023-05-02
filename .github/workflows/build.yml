@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: 'recursive'
+          persist-credentials: false
 
       - name: Use Node.js
         uses: actions/setup-node@v2
@@ -26,7 +27,7 @@ jobs:
         run: cd three-forcegraph-edge-path-bundling && yarn run build
 
       - name: Install Dependencies module Aframe-Forcegraph-Component
-        run: cd aframe-forcegraph-component-edge-path-bundling && yarn link three-forcegraph && yarn install
+        run: cd aframe-forcegraph-component-edge-path-bundling && yarn link three-forcegraph && npm install
 
       - name: Build and Test module Aframe-Forcegraph-Component
         run: cd aframe-forcegraph-component-edge-path-bundling && yarn run dist
