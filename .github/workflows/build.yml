@@ -27,7 +27,7 @@ jobs:
         run: cd three-forcegraph-edge-path-bundling && yarn run build
 
       - name: Install Dependencies module Aframe-Forcegraph-Component
-        run: cd aframe-forcegraph-component-edge-path-bundling && yarn link three-forcegraph && npm install
+        run: cd aframe-forcegraph-component-edge-path-bundling && yarn link three-forcegraph && yarn install
 
       - name: Build and Test module Aframe-Forcegraph-Component
         run: cd aframe-forcegraph-component-edge-path-bundling && yarn run dist
