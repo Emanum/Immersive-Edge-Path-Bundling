@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
     </list>
-    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="">
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
-    </list>
+    <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
     <list id="e5487c29-3af0-415e-a9d8-f9f431ac4932" name="doNotCommit" comment="">
       <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" afterDir="false" />
@@ -230,7 +219,7 @@
       <workItem from="1682941534378" duration="799000" />
       <workItem from="1682942424277" duration="434000" />
       <workItem from="1682942871941" duration="11561000" />
-      <workItem from="1683062821426" duration="747000" />
+      <workItem from="1683062821426" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -365,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682947271750</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add dockerfile and github workflow to build and push to dockerhub">
+      <created>1683063607024</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683063607024</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +402,8 @@
     <MESSAGE value="try to use promises for async calc" />
     <MESSAGE value="add prim to mark the mst relevant edges" />
     <MESSAGE value="Use the MST Relevant edges to manipulate the strength of the link force" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use the MST Relevant edges to manipulate the strength of the link force" />
+    <MESSAGE value="Add dockerfile and github workflow to build and push to dockerhub" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dockerfile and github workflow to build and push to dockerhub" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
