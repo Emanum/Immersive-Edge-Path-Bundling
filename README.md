@@ -5,6 +5,7 @@
 The idea of this project is to implement the edge path algorithm in 3D and render with A-Frame in VR.
 The paper that introduced this algorithm is [Edge-Path Bundling: A Less Ambiguous Edge Bundling Approach](https://arxiv.org/abs/2108.05467)
 
+There is a [demo](https://immersive-edge-path.emanum.dev/) available.
 
 ## Architecture
 
