@@ -20,16 +20,16 @@ jobs:
           node-version: '18.x'
 
       - name: Install Dependencies module Three-Forcegraph-Edge-Path-Bundling
-        run: cd three-forcegraph-edge-path-bundling && yarn install
+        run: cd three-forcegraph-edge-path-bundling && yarn link && yarn install
 
       - name: Build and Test module Three-Forcegraph-Edge-Path-Bundling
-        run: cd three-forcegraph-edge-path-bundling && npm run build
+        run: cd three-forcegraph-edge-path-bundling && yarn run build
 
       - name: Install Dependencies module Aframe-Forcegraph-Component
-        run: cd aframe-forcegraph-component-edge-path-bundling && yarn install
+        run: cd aframe-forcegraph-component-edge-path-bundling && yarn link three-forcegraph && yarn install
 
       - name: Build and Test module Aframe-Forcegraph-Component
-        run: cd aframe-forcegraph-component-edge-path-bundling && npm run dist
+        run: cd aframe-forcegraph-component-edge-path-bundling && yarn run dist
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
