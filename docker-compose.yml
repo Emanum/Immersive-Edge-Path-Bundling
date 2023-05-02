@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  nginx:
+    image: emanum/immersive-edge-path-bundling-demo:latest
+    ports:
+      - "8080:80"

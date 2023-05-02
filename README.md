@@ -99,3 +99,9 @@ Access to script at 'http://unpkg.com/three/examples/jsm/controls/TrackballContr
 When debugging, the x-ijt header is sent for request signing to prevent requests from outside from being rejected; header is not sent if Allow unsigned requests in Settings | Build, Execution, Deployment | Debugger is enabled, so, if you are facing issues because of this header, you have to turn this option on
 
 found on https://intellij-support.jetbrains.com/hc/en-us/community/posts/4407891226898-CORS-policy-error
+
+
+# Build docker files
+
+docker build -t emanum/immersive-edge-path-bundling-demo:latest .
+docker push emanum/immersive-edge-path-bundling-demo:latest
