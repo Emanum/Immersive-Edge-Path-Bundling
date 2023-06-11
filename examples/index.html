@@ -1,14 +1,195 @@
-<style>
-    body{
-        font-family: Arial,serif
-    }
-</style>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="utf-8">
+    <title>Immersive Edge Path Bundling</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .flexContainer {
+            display: flex;
+            grid-column-gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .flex-item {
+            flex: 1 1 0;
+        }
+
+        .image_desc {
+            text-align: center;
+            font-size: smaller;
+            font-style: italic;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
 <main>
-    <h1>Immersive Edge Path Bundling Examples</h1>
-    <h4>Developed for 186.833 Visualisierung 2 at TU Wien 2023 by Manuel Eiweck</h4>
-    <ol>
-        <li><a href="examples/3d/basic/index.html">3D non VR example</a></li>
-        <li><a href="examples/vr/basic/index.html"> VR example</a></li>
-    </ol>
+    <div class="container">
+        <div class="row">
+            <h2>Immersive Edge Path Bundling</h2>
+            <h5>Developed for 186.833 Visualisierung 2 at TU Wien 2023 by Manuel Eiweck</h5>
+            <img src="resources/result.png" alt="Result" width="100%">
+            <p class="image_desc">Immersive Edge Path Bundling on a graph with 1k nodes and 2k links. </p>
+            <p>This project is based on the <a href="#reference-paper">paper</a> "Edge-Path Bundling: A Less Ambiguous
+                Edge Bundling Approach" by Markus Wallinger, David Archambault, David Auber, Michael Nöllenburg and
+                Jussi Peltonen.</p>
+            <b>General</b>
+            <p>The main purpose of edge bundling in general is to reduce visual clutter in a graph by grouping edges
+                together. A commonly used approach is to use a force-directed layout algorithm to group edges.
+                However, this can introduce edge ambiguities. Edge Path Bundling is an approach to avoid this ambiguity.
+                Only related edges are bundled together on their shortest path between their endpoints.
+            </p>
+            <img src="resources/edgePathExplain.png" alt="Edge Path Bundling" width="100%">
+            <p class="image_desc">Example how Edge Path Bundling works. Left: Example of an edge ambiguity.
+                Middle/Right: Example of
+                Edge Path Bundling. [<a href="#reference-paper">paper</a>]</p>
+
+        </div>
+        <article class="row">
+            <h4>Goal of Immersive Edge Path Bundling</h4>
+            <p>
+                The main goal of this project was to port the existing Edge Path Bundling algorithm to virtual/augmented
+                reality.
+                In order to achieve this, we first had to adopt the algorithm to work in 3D space.
+                There were two main challenges to overcome:
+            </p>
+            <p><b>3D space</b> The original paper was designed for 2D space. To render our 3D scene we use Three.js and
+                A-Frame for VR/AR support. The edge path bundling algorithm only uses references to nodes for bundling
+                and never coordinates directly. This allowed us to easily port the algorithm to 3D space.
+            </p>
+            <p><b>3D Layout algorithm</b> The original paper uses datasets with a fixed layout e.g. airline routes.
+                Due to our approach of extending the algorithm to 3D space, we loose the ability to use a fixed layout
+                as such datasets usually only have 2D coordinates (latitude/longitude).
+                <br>
+                We therefore had to implement a 3D layout algorithm. We used the force-directed layout algorithm from <a
+                        href="https://github.com/vasturiano/three-forcegraph">vasturiano/three-forcegraph</a>.
+            </p>
+        </article>
+        <article class="flexContainer">
+            <article class="flex-item">
+                <h5>Source Code</h5>
+                <p>Source code can be found on <a
+                        href="https://github.com/Emanum/Immersive-Edge-Path-Bundling">Github</a>
+                </p>
+
+            </article>
+            <article class="flex-item">
+                <h5>Demo</h5>
+                Both versions share the same bundling and layout algorithm as well as the same data set with ~1k nodes
+                and ~2k edges.
+                <ol>
+                    <li><a href="examples/3d/basic/index.html">3D non VR example</a></li>
+                    <li><a href="examples/vr/basic/index.html"> VR example</a></li>
+                </ol>
+            </article>
+        </article>
+        <article class="row">
+            <h4>Development Process</h4>
+            <p>The original graph in the 3D scenes with basic force based layout and no edge path bundling looked like
+                this:</p>
+            <img src="resources/originalGraph.jpg" alt="Original Graph" width="80%" class="center">
+            <p class="image_desc">Original Graph</p>
+            <p>After implementing the edge path bundling algorithm, the graph looked like this:</p>
+            <img src="resources/firstRevision.jpg" alt="Edge Path Bundling" width="80%" class="center">
+            <p class="image_desc">First revision of Edge Path Bundling</p>
+            <p>We can see that the edge bundling works as intended. However, we still have a lot of visual clutter due
+                to the force based layout. Markus Wallinger, the author of the original paper, suggested to only use a
+                minimal spanning tree for the force based layout. Afterward, render all nodes as usual for the edge
+                path bundling algorithm. This resulted in the following graph:</p>
+            <video src="resources/result.webm" alt="Edge Path Bundling" width="100%" class="center" autoplay loop
+                   muted></video>
+            <p class="image_desc">Final result of Edge Path Bundling. As seen in the demo. </p>
+        </article>
+
+
+        <article class="row">
+            <h4>Implementation Details</h4>
+            <h5>General</h5>
+            The git repository contains multiple parts:
+            <p><b>Examples folder:</b> Contains the demos as well as this documentation you read right now.</p>
+            <p><b>three-forcegraph-edge-path-bundling:</b> This is a git subrepo that is forked from
+                vasturiano/three-forcegraph and extended with the layout algorithm and edge path algorithm.</p>
+            <p><b>aframe-forcegraph-component:</b> This is a git subrepo that is forked from
+                vasturiano/aframe-forcegraph-component and contains a npm link to the
+                three-forcegraph-edge-path-bundling to drive the VR/AR demos.</p>
+            <p><b>Docker:</b> A simple dockerfile that packs the locally built static html/css/js files generated
+                by npm in a default nginx image for deployment. The docker images are uploaded <a
+                        href="https://hub.docker.com/r/emanum/immersive-edge-path-bundling-demo">here</a></p>
+            <h5>Layout</h5>
+            <p>After loading the JSON containing all the nodes and links. We apply the prim algorithm to each
+                connected component of the graph. This results in a minimal spanning tree (MST) for each connected
+                component.
+                The link strength of all edges that are not required for the MST is set to 0. This results in a Tree
+                like structure.
+            </p>
+            <p>
+                Afterward, we apply the force based layout algorithm to the graph. The forces are the default forces of
+                the used library.
+            </p>
+            <p>
+                Finally, we apply the edge path bundling algorithm to the graph. Currently, we did not manage to
+                calculate in the background. Therefore, the visualization freezes until the bundling is finished.
+            </p>
+            <h5>Rendering</h5>
+            <p>For rendering we used an orbit camera for the 3D example and an first person camera for the VR/AR
+                example. However, this is just defined in the examples as this is not part of our extended library.
+        </article>
+
+        <article class="row">
+            <h4>Results and Future Work</h4>
+            While we managed to extend the edge path bundling algorithm to 3D space, we did not validate the results
+            with different datasets or multiple users. Therefore, we cannot compare our result to the original paper.
+            However, we believe that the edge path bundling in 3D space is a way to reduce clutter in general.
+            Especially, when we compare the results to the original graph without edge path bundling or our first
+            revision.
+
+            <p><b>Visual Clutter:</b>
+                Using a MST for the layout algorithm only improved the clarity of the graph by a bit. We still have a
+                lot of visual clutter. One way to further improve this could be to only render edges where the start and
+                end node are in the field of view. This would reduce the visual clutter by a lot. Another could be to
+                consider the layout for the edge path bundling algorithm or just implement filtering by the user (select
+                certain nodes and edges to be rendered).
+            </p>
+            <p><b>Benchmark results: </b>
+                A comparison to other edge bundling algorithms would be interesting in the future.
+            </p>
+            <p><b>Implementation: </b>
+                While we use state-of-the-art libraries for rendering and VR/AR technology. Currently, there is no way
+                to use our implementation in a production environment. A code cleanup, introducing flags to turn on/off
+                our
+                edge path bundling algorithm would allow us to create a pull request to the original library. This would
+                ensure that our implementation is maintained and can be used by others. Another way would be to create a
+                npm package ourselves.
+            </p>
+        </article>
+
+        <div class="row">
+            <h3>References</h3>
+            <b id="reference-paper">Reference paper</b>
+            <p>M. Wallinger, D. Archambault, D. Auber, M. Nollenburg and J. Peltonen, "Edge-Path Bundling: A Less
+                Ambiguous Edge Bundling Approach" in IEEE Transactions on Visualization & Computer Graphics, vol. 28,
+                no. 01, pp. 313-323, 2022.
+                doi: 10.1109/TVCG.2021.3114795</p>
+            <p><a href="https://arxiv.org/abs/2108.05467">Arxiv Publication</a></p>
+
+            <b>Used technologies</b>
+            <ul>
+                <li><a href="https://threejs.org/">Three.js</a></li>
+                <li><a href="https://aframe.io/">A-Frame</a></li>
+                <li><a href="https://github.com/vasturiano/three-forcegraph">vasturiano/three-forcegraph</a></li>
+                <li><a href="https://github.com/vasturiano/aframe-forcegraph-component">vasturiano/aframe-forcegraph-component</a>
+            </ul>
+
+
+            <p>Thanks to the Vis2 Team and Markus Wallinger for feedback during the project.</p>
+        </div>
+    </div>
+
 </main>

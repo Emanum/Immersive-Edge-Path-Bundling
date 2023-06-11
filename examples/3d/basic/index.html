@@ -1,8 +1,8 @@
 <head>
   <style> body { margin: 0; } </style>
 
-<!--  <script src="https://unpkg.com/three"></script>-->
-  <script src="../../dependencyCache/http_unpkg.com_three.js"></script>
+  <script src="https://unpkg.com/three"></script>
+<!--  <script src="../../dependencyCache/http_unpkg.com_three.js"></script>-->
 
 <!--  <script src="//unpkg.com/three-forcegraph"></script>-->
   <script src="../../../three-forcegraph-edge-path-bundling/dist/three-forcegraph.js"></script>
@@ -11,20 +11,20 @@
 <body>
   <div id="3d-graph"></div>
 
-<!--  <script type="importmap">{-->
-<!--    "imports": {-->
-<!--      "three": "https://unpkg.com/three/build/three.module.js"-->
-<!--    }-->
-<!--  }</script>-->
   <script type="importmap">{
     "imports": {
-      "three": "../../dependencyCache/three.module.js"
+      "three": "https://unpkg.com/three/build/three.module.js"
     }
   }</script>
+<!--  <script type="importmap">{-->
+<!--    "imports": {-->
+<!--      "three": "../../dependencyCache/three.module.js"-->
+<!--    }-->
+<!--  }</script>-->
   <script type="module">
-    import { TrackballControls } from '../../dependencyCache/TrackballControls.js';
+    // import { TrackballControls } from '../../dependencyCache/TrackballControls.js';
 
-    // import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
+    import { TrackballControls } from '//unpkg.com/three/examples/jsm/controls/TrackballControls.js';
 
     //Load data
     let treeDemoGraph = '../../datasets/TreeDemoGraph.json';

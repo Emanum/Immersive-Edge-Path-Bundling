@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="">
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="Add dockerfile and github workflow to build and push to dockerhub">
+      <change afterPath="$PROJECT_DIR$/examples/resources/edgePathExplain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/resources/firstRevision.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/resources/originalGraph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/resources/result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/resources/result.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/linkVisUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js" afterDir="false" />
     </list>
     <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
-    <list id="e5487c29-3af0-415e-a9d8-f9f431ac4932" name="doNotCommit" comment="">
-      <change afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling/yarn.lock" afterDir="false" />
-    </list>
+    <list id="e5487c29-3af0-415e-a9d8-f9f431ac4932" name="doNotCommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,40 +70,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/datasets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;0d570cb2-96df-43cc-80da-7f777e6d0afe&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.24698795&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/three-forcegraph-edge-path-bundling/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "0d570cb2-96df-43cc-80da-7f777e6d0afe",
+    "settings.editor.splitter.proportion": "0.24698795",
+    "ts.external.directory.path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/three-forcegraph-edge-path-bundling/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;repository&quot;,
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository",
+      "directory"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/resources" />
       <recent name="$PROJECT_DIR$/examples/datasets" />
       <recent name="F:\dev\projects\Immersive-Edge-Path-Bundling\examples\vr" />
       <recent name="F:\dev\projects\Immersive-Edge-Path-Bundling\examples\3d" />
@@ -102,7 +114,7 @@
       <recent name="$PROJECT_DIR$/examples/dataesets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Dev Three JS">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Immersive-Edge-Path-Bundling/examples/3d/basic/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -166,9 +178,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -220,6 +232,10 @@
       <workItem from="1682942424277" duration="434000" />
       <workItem from="1682942871941" duration="11561000" />
       <workItem from="1683062821426" duration="1103000" />
+      <workItem from="1686038333173" duration="1196000" />
+      <workItem from="1686057144621" duration="717000" />
+      <workItem from="1686219036857" duration="4013000" />
+      <workItem from="1686489211820" duration="12269000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -423,33 +439,13 @@
           <line>51</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/edge-path-utils.js</url>
-          <line>114</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js</url>
-          <line>106</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/tree-layout-utils.js</url>
-          <line>35</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/utils/tree-layout-utils.js</url>
-          <line>26</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/three-forcegraph-edge-path-bundling/src/forcegraph-kapsule.js</url>
-          <line>88</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="link" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
