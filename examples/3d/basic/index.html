@@ -53,6 +53,7 @@
     scene.add(Graph);
     scene.add(new THREE.AmbientLight(0xbbbbbb));
 
+
     // Setup camera
     const camera = new THREE.PerspectiveCamera();
     camera.far = 10000;
@@ -60,6 +61,7 @@
     camera.updateProjectionMatrix();
     camera.lookAt(Graph.position);
     camera.position.z = Math.cbrt(N) * 180;
+    scene.camera = camera;
 
     // Add camera controls
     const tbControls = new THREE.TrackballControls(camera, renderer.domElement);

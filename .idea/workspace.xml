@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="Update the index.html">
-      <change afterPath="$PROJECT_DIR$/examples/js/aframe-forcegraph-component.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/js/three-forcegraph.js" afterDir="false" />
+    <list default="true" id="ecf3f748-8198-426b-8c65-7ccb357a351a" name="Changes" comment="Change path for docker. prepare final submission">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/dist/aframe-forcegraph-component.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/3d/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/3d/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/vr/basic/aframe-forcegraph-component.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/vr/basic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/vr/basic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/vr/basic/readme" beforeDir="false" afterPath="$PROJECT_DIR$/examples/js/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" beforeDir="false" afterPath="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" afterDir="false" />
     </list>
     <list id="e6a2a647-5652-4d69-a3e2-72cc82922703" name="Dist" comment="" />
     <list id="e5487c29-3af0-415e-a9d8-f9f431ac4932" name="doNotCommit" comment="" />
@@ -43,7 +37,7 @@
         <entry key="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" value="render-fov-links" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -82,7 +76,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/manuel/private_dev/repos/Immersive-Edge-Path-Bundling/examples/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -118,7 +112,10 @@
       <recent name="$PROJECT_DIR$/examples/dataesets" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.nginx: Compose Deployment">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Immersive-Edge-Path-Bundling/examples/vr/basic/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Immersive-Edge-Path-Bundling/examples/3d/basic/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -177,16 +174,17 @@
       <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="npm.Dev Three JS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
-        <item itemvalue="Docker.Dockerfile: Compose Deployment" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +238,11 @@
       <workItem from="1686038333173" duration="1196000" />
       <workItem from="1686057144621" duration="717000" />
       <workItem from="1686219036857" duration="4013000" />
-      <workItem from="1686489211820" duration="14140000" />
+      <workItem from="1686489211820" duration="17857000" />
+      <workItem from="1686557182196" duration="12000" />
+      <workItem from="1686572398519" duration="52000" />
+      <workItem from="1686697802618" duration="616000" />
+      <workItem from="1686755616930" duration="8566000" />
     </task>
     <task id="LOCAL-00001" summary="init idea project">
       <created>1679161764830</created>
@@ -396,13 +398,49 @@
       <option name="project" value="LOCAL" />
       <updated>1686509917867</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Rebuild">
+      <created>1686511489531</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686511489531</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Change path for docker. prepare final submission">
+      <created>1686511619205</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686511619205</updated>
+    </task>
+    <task id="LOCAL-00025" summary="only display links where source and target node is in fov">
+      <created>1686778418541</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686778418541</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="render-fov-links" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -415,12 +453,17 @@
               </option>
               <option name="FILTERS">
                 <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="render-fov-links" />
+                      </list>
+                    </value>
+                  </entry>
                   <entry key="roots">
                     <value>
                       <list>
                         <option value="$PROJECT_DIR$/three-forcegraph-edge-path-bundling" />
-                        <option value="$PROJECT_DIR$" />
-                        <option value="$PROJECT_DIR$/aframe-forcegraph-component-edge-path-bundling" />
                       </list>
                     </value>
                   </entry>
@@ -453,7 +496,10 @@
     <MESSAGE value="Add dockerfile and github workflow to build and push to dockerhub" />
     <MESSAGE value="Update the index.html" />
     <MESSAGE value="try to implement filtering for only visible links" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to implement filtering for only visible links" />
+    <MESSAGE value="Rebuild" />
+    <MESSAGE value="Change path for docker. prepare final submission" />
+    <MESSAGE value="only display links where source and target node is in fov" />
+    <option name="LAST_COMMIT_MESSAGE" value="only display links where source and target node is in fov" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
