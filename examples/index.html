@@ -94,18 +94,30 @@
             <h4>Development Process</h4>
             <p>The original graph in the 3D scenes with basic force based layout and no edge path bundling looked like
                 this:</p>
-            <img src="resources/originalGraph.jpg" alt="Original Graph" width="80%" class="center">
+            <img src="resources/originalGraph.jpg" alt="Original Graph" width="100%" class="center">
             <p class="image_desc">Original Graph</p>
+            <h5>Basic Implementation</h5>
             <p>After implementing the edge path bundling algorithm, the graph looked like this:</p>
-            <img src="resources/firstRevision.jpg" alt="Edge Path Bundling" width="80%" class="center">
+            <img src="resources/firstRevision.jpg" alt="Edge Path Bundling" width="100%" class="center">
             <p class="image_desc">First revision of Edge Path Bundling</p>
+            <h5>Layout Optimization</h5>
             <p>We can see that the edge bundling works as intended. However, we still have a lot of visual clutter due
                 to the force based layout. Markus Wallinger, the author of the original paper, suggested to only use a
                 minimal spanning tree for the force based layout. Afterward, render all nodes as usual for the edge
                 path bundling algorithm. This resulted in the following graph:</p>
-            <video src="resources/result.webm" alt="Edge Path Bundling" width="100%" class="center" autoplay loop
+            <video src="resources/secondRev.webm" alt="Edge Path Bundling" width="100%" class="center" autoplay loop
                    muted></video>
-            <p class="image_desc">Final result of Edge Path Bundling. As seen in the demo. </p>
+            <p class="image_desc">Second revision of Edge Path Bundling with an optimized layout.</p>
+            <h5>Rendering Optimization</h5>
+            <p>While the visual clutter is better than in the first revision, there is still room for improvement. We
+            tried to clean this up by not rendering all edges at once, but only the ones where the start and end node
+            is in the field of view of the camera. This resulted in the following graph:</p>
+            <video src="resources/result-3d.webm" alt="Edge Path Bundling" width="100%" class="center" autoplay loop
+                   muted></video>
+            <p class="image_desc">Final result of Edge Path Bundling for orbit camera example.</p>
+            <video src="resources/result-vr.webm" alt="Edge Path Bundling" width="100%" class="center" autoplay loop
+                   muted></video>
+            <p class="image_desc">Final result of Edge Path Bundling for VR example.</p>
         </article>
 
 
@@ -140,6 +152,9 @@
             <h5>Rendering</h5>
             <p>For rendering we used an orbit camera for the 3D example and an first person camera for the VR/AR
                 example. However, this is just defined in the examples as this is not part of our extended library.
+            <p>To further reduce the visual clutter, we only render bundled edges if the start and end node are in the
+                field of view. This is done by calculating the view frustum of the active camera and enabling/disabling
+            the visibility of the edges accordingly.</p>
         </article>
 
         <article class="row">
